@@ -8,7 +8,7 @@ const port = process.env.PORT || 8080
 const app = express()
 
 const jwtCheck = auth({
-  audience: 'http://localhost:8080',
+  audience: 'https://rest-api-production-2bde.up.railway.app:8080',
   issuerBaseURL: 'https://dev-nso40w1sggzzrxnx.us.auth0.com/',
   tokenSigningAlg: 'RS256'
 });
