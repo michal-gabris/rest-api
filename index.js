@@ -83,6 +83,8 @@ resource.all.auth((req, res, context) => {
     })
 })
 
+console.log(process.env)
+
 sequelize
     .sync()
     .then(() => app.listen(port, () => {
